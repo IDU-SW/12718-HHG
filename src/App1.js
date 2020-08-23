@@ -1,7 +1,7 @@
 import React from 'react';
 
 class App extends React.Component { //React.Component 상속
-  constructor(props) {  //생명주기 render보다 다음
+  constructor(props) {  //component 생성
     super(props);
     console.log('constructor vs render');
   }
@@ -18,11 +18,11 @@ class App extends React.Component { //React.Component 상속
     this.setState({count: this.state.count-1}); //react식 증감
   };
 
-  componentDidMount() { //화면 종료시
+  componentDidMount() { //component가 render 된 직후
     console.log('componentDidMount');
   }
 
-  componentDidUpdate() {  //화면 업데이트시
+  componentDidUpdate() {  //props나 state가 수정되고 rendering된 후
     console.log('I just updated');
   }
 
