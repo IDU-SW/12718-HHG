@@ -1,3 +1,3 @@
 # Movie App 2020
 
-React JS Fundamentals Course 2020
+잠깐동안 리액트 공부하며 작업한 결과물입니다.
